@@ -1,0 +1,4 @@
+/* pages/list/list.wxss */
+.margin{
+	border:2px solid #ccc;
+}

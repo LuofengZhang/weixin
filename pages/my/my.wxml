@@ -1,0 +1,11 @@
+<!--pages/my/my.wxml-->
+<view class='user-box'>
+  <view class='user-left'>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <view class='user-right'>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-city">{{userInfo.country}}{{userInfo.province}}{{userInfo.city}}</text>
+  </view>
+</view>
+

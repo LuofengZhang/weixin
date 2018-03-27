@@ -1,0 +1,39 @@
+/* pages/my/my.wxss */
+view{
+  font-family:"微软雅黑";
+}
+.user-box{
+  background-color: #1296db;
+  height: 280rpx;
+}
+
+.user-left{
+  width: 30%;
+  height:100%;
+  float: left;
+}
+.user-right{
+  box-sizing: border-box;
+  height: 100%;
+  width: 70%;
+  float: right;
+  padding:76rpx 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 76rpx;
+}
+
+.userinfo-nickname {
+   color: white; 
+   font-weight: bold; 
+  display: block;
+}
+.userinfo-city{
+  color: white;
+  margin-top: 30rpx;
+  font-size: 1rem;
+}

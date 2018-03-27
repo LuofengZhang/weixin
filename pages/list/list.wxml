@@ -1,0 +1,11 @@
+<!--pages/list/list.wxml-->
+<view wx:for="{{arr}}">
+  {{index}}: {{item.name}}
+</view>
+<span style="font-family:'Comic Sans MS';font-size:18px;color:#333333;">
+  <view class="container" class="zn-uploadimg">  
+    <button type="primary"bindtap="showok">消息提示框</button>   
+    <button type="primary"bindtap="modalcnt">模态弹窗</button>   
+    <button type="primary"bindtap="actioncnt">操作菜单</button>   
+  </view>
+</span>  
