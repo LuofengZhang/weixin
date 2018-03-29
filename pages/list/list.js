@@ -61,7 +61,7 @@ Page({
   onLoad: function (options) {
     var me=this
     wx.request({
-      url: 'http://192.168.14.81:3000',
+      url: 'http://zhchina.top:8888',
       data: {
         x: 'x',
         y: 'y'

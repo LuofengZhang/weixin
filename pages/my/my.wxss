@@ -3,7 +3,8 @@ view{
   font-family:"微软雅黑";
 }
 .user-box{
-  background-color: #1296db;
+  background:url(http://zhchina.top:8888/1522201928608.png) ;
+  background-size:100% 280px; 
   height: 280rpx;
 }
 
@@ -17,7 +18,7 @@ view{
   height: 100%;
   width: 70%;
   float: right;
-  padding:76rpx 20rpx;
+  padding:90rpx 20rpx;
 }
 
 .userinfo-avatar {
@@ -35,5 +36,5 @@ view{
 .userinfo-city{
   color: white;
   margin-top: 30rpx;
-  font-size: 1rem;
+  font-size: 30rpx;
 }

@@ -8,4 +8,6 @@
     <text class="userinfo-city">{{userInfo.country}}{{userInfo.province}}{{userInfo.city}}</text>
   </view>
 </view>
+<view>
+</view>
 

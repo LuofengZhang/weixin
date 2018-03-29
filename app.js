@@ -10,6 +10,21 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code)
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http://localhost:8888/users/login',
+            data: {
+              code: res.code
+            },
+            success:function(data){
+              console.log(data);
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息

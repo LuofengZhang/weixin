@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/my/my",
     "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
     "pages/map/map",
     "pages/view/view",
-    "pages/list/list",
-    "pages/logs/logs"
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,13 +29,13 @@
         "pagePath": "pages/view/view",
         "iconPath": "img/index2.png",
         "selectedIconPath": "img/index.png",
-        "text": "視圖"
+        "text": "视图"
       },
       {
         "pagePath": "pages/logs/logs",
         "iconPath": "img/index2.png",
         "selectedIconPath": "img/index.png",
-        "text": "日誌"
+        "text": "日志"
       },
       {
         "pagePath": "pages/my/my",
