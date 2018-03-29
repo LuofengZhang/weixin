@@ -8,6 +8,30 @@
     <text class="userinfo-city">{{userInfo.country}}{{userInfo.province}}{{userInfo.city}}</text>
   </view>
 </view>
-<view>
+<view class='list'>
+  <view class='list-item'>
+    <image class='icon' src='../../img/jf-img-1.png'></image>
+    <text>当前积分</text>
+  </view>
+</view>
+<view class='list'>
+  <view class='list-item'>
+    <image class='icon' src='../../img/jf-img-1.png'></image>
+    <text>全部订单</text>
+  </view>
+  <view class='list-item'>
+    <image class='icon' src='../../img/jf-img-1.png'></image>
+    <text>全部卡券</text>
+  </view>
+</view>
+<view class='list'>
+  <view class='list-item'>
+    <image class='icon' src='../../img/jf-img-1.png'></image>
+    <text>预约记录</text>
+  </view>
+  <view class='list-item'>
+    <image class='icon' src='../../img/jf-img-1.png'></image>
+    <text>我的车库</text>
+  </view>
 </view>
 

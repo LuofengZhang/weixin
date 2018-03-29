@@ -1,4 +1,6 @@
 // pages/view/view.js
+const util = require('../../utils/util.js');
+var newurl = util.newurl;
 Page({
 
   /**
@@ -15,7 +17,7 @@ Page({
       success: function (res) {
         var tempFilePaths = res.tempFilePaths
           wx.uploadFile({
-            url: 'http://zhchina.top:8888/upload/image', //仅为示例，非真实的接口地址
+          url: newurl+'upload/image', //仅为示例，非真实的接口地址
           filePath: tempFilePaths[0],
           name: 'file',
           formData: {
@@ -41,7 +43,7 @@ Page({
       success:function(res){
         var tempFilePath = res.tempFilePath
         const uploadTask=wx.uploadFile({
-          url: 'http://zhchina.top:8888/upload/video',
+          url: newurl+'upload/video',
           filePath: tempFilePath,
           name: 'file',
           success:function(){

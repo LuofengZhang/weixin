@@ -1,4 +1,6 @@
 //app.js
+const util = require('./utils/util.js');
+var newurl = util.newurl;
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -10,11 +12,10 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        console.log(res.code)
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'http://localhost:8888/users/login',
+            url: newurl+'users/login',
             data: {
               code: res.code
             },

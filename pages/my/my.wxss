@@ -1,9 +1,11 @@
 /* pages/my/my.wxss */
-view{
+page{
+  background-color:#f6f6f6;
+  height:100%;
   font-family:"微软雅黑";
 }
 .user-box{
-  background:url(http://zhchina.top:8888/1522201928608.png) ;
+  background:url(http://zhchina.top:9000/1522201928608.png) ;
   background-size:100% 280px; 
   height: 280rpx;
 }
@@ -38,3 +40,24 @@ view{
   margin-top: 30rpx;
   font-size: 30rpx;
 }
+.list{
+   margin-bottom:15rpx;  
+}
+view .list:last-child{
+  border: seashell 1px solid;
+}
+.list-item{
+   margin-bottom: 2px; 
+  background-color:white;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  height: 3rem;
+  padding-left: 5%;
+}
+.icon{
+  height: 2rem;
+  width: 2rem;
+  vertical-align: middle;
+  margin-right:0.6rem; 
+}
+

@@ -1,4 +1,6 @@
 // pages/list/list.js
+const util = require('../../utils/util.js');
+var newurl = util.newurl;
 Page({
 
   /**
@@ -61,7 +63,7 @@ Page({
   onLoad: function (options) {
     var me=this
     wx.request({
-      url: 'http://zhchina.top:8888',
+      url: newurl+'',
       data: {
         x: 'x',
         y: 'y'
