@@ -9,12 +9,32 @@ Page({
    */
   data: {
     userInfo: {},
-    hasUserInfo: false
+    hasUserInfo: false,
+    jifen:0
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: "",
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 3000)
+
+    wx.showModal({
+      title: '提示',
+      content: '第一行内容\r\n第二行内容\r\n第三行内容\r\n第四行内容',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,7 +62,14 @@ Page({
       })
     }
   },
-  
+  openfile:function(e){
+    var view = e.target.dataset.id
+    if (view){
+      wx.navigateTo({
+        url: '../' + view + '/' + view
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -5,33 +5,38 @@
   </view>
   <view class='user-right'>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    <text class="userinfo-city">{{userInfo.country}}{{userInfo.province}}{{userInfo.city}}</text>
+    <text class="userinfo-city" lang="zh_CN">{{userInfo.country}}{{userInfo.province}}{{userInfo.city}}</text>
   </view>
 </view>
 <view class='list'>
-  <view class='list-item'>
+  <view class='list-item' bindtap='openfile'>
     <image class='icon' src='../../img/jf-img-1.png'></image>
     <text>当前积分</text>
+    <text class='jifen'>{{jifen}}</text>
   </view>
 </view>
 <view class='list'>
-  <view class='list-item'>
-    <image class='icon' src='../../img/jf-img-1.png'></image>
+  <view class='list-item' data-id='orderlist' bindtap='openfile'>
+    <image class='icon' src='../../img/d-1.png'></image>
     <text>全部订单</text>
+     <image class='icon2' src='../../img/go.png'></image>
   </view>
-  <view class='list-item'>
-    <image class='icon' src='../../img/jf-img-1.png'></image>
+  <view class='list-item' data-id='userCardCouponsList' bindtap='openfile'>
+    <image class='icon' src='../../img/notepad.png'></image>
     <text>全部卡券</text>
+    <image class='icon2' src='../../img/go.png'></image>
   </view>
 </view>
 <view class='list'>
-  <view class='list-item'>
-    <image class='icon' src='../../img/jf-img-1.png'></image>
+  <view class='list-item' data-id='myReserveList' bindtap='openfile'>
+    <image class='icon' src='../../img/clock.png'></image>
     <text>预约记录</text>
+    <image class='icon2' src='../../img/go.png'></image>
   </view>
-  <view class='list-item'>
-    <image class='icon' src='../../img/jf-img-1.png'></image>
+  <view class='list-item' data-id='carlist' bindtap='openfile'>
+    <image class='icon' src='../../img/che-1.png'></image>
     <text>我的车库</text>
+    <image class='icon2' src='../../img/go.png'></image>
   </view>
 </view>
 

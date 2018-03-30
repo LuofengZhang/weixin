@@ -3,9 +3,12 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/my/my",
-    "pages/map/map",
     "pages/view/view",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/myReserveList/myReserveList",
+    "pages/carlist/carlist",
+    "pages/orderlist/orderlist",
+    "pages/userCardCouponsList/userCardCouponsList"
   ],
   "window": {
     "backgroundTextStyle": "light",

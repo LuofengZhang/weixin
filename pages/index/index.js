@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const util = require('../../utils/util.js');
 Page({
   data: {
     motto: 'Hello MINA!',
@@ -42,9 +42,19 @@ Page({
         }
       })
     }
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res) {
+        var lat1 = res.latitude
+        var lng1 = res.longitude
+        var speed = res.speed
+        var accuracy = res.accuracy
+        console.log(res)
+        console.log( util.getDistance(lat1, lng1,22.83,108.31))
+      }
+    })
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
